@@ -140,7 +140,7 @@ property_dmg &lt;- subset(property_dmg, ! (EVTYPE %in% invalid_events))
 crop_dmg &lt;- subset(crop_dmg, ! (EVTYPE %in% invalid_events))
 fatalities &lt;- subset(fatalities, ! (EVTYPE %in% invalid_events))
 injuries &lt;- subset(injuries, ! (EVTYPE %in% invalid_events))</code></pre>
-<p>For the remaining events, we have a created a function named <code>cleaning_events()</code> that assigns one of the 48 standard types described in the official documentation to each of the non-standard events included in the dataset. For details on how this function works, please go to the following link.</p>
+<p>For the remaining events, we have a created a function named <code>cleaning_events()</code> that assigns one of the 48 standard types described in the official documentation to each of the non-standard events included in the dataset. For details on how this function works, please go to the following <a href="https://github.com/maxal1986/RepData_PeerAssessment2/blob/master/cleaning_events.R">link</a>.</p>
 <pre class="r"><code>source(&quot;cleaning_events.R&quot;)
 property_dmg$EVTYPE &lt;- cleaning_events(property_dmg$EVTYPE)
 crop_dmg$EVTYPE &lt;- cleaning_events(crop_dmg$EVTYPE)

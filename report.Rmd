@@ -108,7 +108,7 @@ fatalities <- subset(fatalities, ! (EVTYPE %in% invalid_events))
 injuries <- subset(injuries, ! (EVTYPE %in% invalid_events))
 ```
 
-For the remaining events, we have a created a function named `cleaning_events()` that assigns one of the 48 standard types described in the official documentation to each of the non-standard events included in the dataset. For details on how this function works, please go to the following link.
+For the remaining events, we have a created a function named `cleaning_events()` that assigns one of the 48 standard types described in the official documentation to each of the non-standard events included in the dataset. For details on how this function works, please go to the following [link](https://github.com/maxal1986/RepData_PeerAssessment2/blob/master/cleaning_events.R).
 
 ```{r}
 source("cleaning_events.R")
